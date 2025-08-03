@@ -14,13 +14,14 @@ h1{
     font-size: 500%;
     text-decoration: underline;
     font-family: Oswald;
+    margin-top: -10%;
 }
 .LogodeAgDaNic{
-    height: 50vh;
-    width: 75vw;
-    margin: auto;
+    height: 20vh;
+    width: 10vw;
     display: flex;
-    align-items: center;
+    display: inline;
+    align-items: start;
 }
 .logosredes{
     height: 55px;
@@ -47,13 +48,28 @@ a{
 .navpaginas{
     display: inline;
 }
-
-
+.navegarpaginas{
+    margin-top: -10%;
+}
+/* modificacion del header */
+.gal{
+    margin-top: 2%;
+}
+.tien{
+    margin-top: 2%;
+}
+.sobren{
+    margin-top: 2%;
+}
+.contac{
+    margin-top: 2%;
+}
 .subtitulo{
     font-size: xx-large;
     text-decoration: underline;
     color: rgb(12, 57, 153);
     font-family: Oswald;
+    margin-top: 5%;
 }
 .carruseltuercas{
     height: 75vh;
@@ -286,9 +302,15 @@ h3{
 /* responsive */
 @media(max-width:425px){
     .LogodeAgDaNic{
-        width: auto;
-        height: 25vh;
+        width: 20vw;
+        height: 10vh;
         align-items: center;
+    }
+    .navegarpaginas{
+        margin-top: -30%;
+    }
+    .homecelu{
+        margin-top: -40%;
     }
     h1{ 
         text-align: center;
@@ -296,6 +318,10 @@ h3{
     font-size: 200%;
     text-decoration: underline;
     font-family: Oswald;
+    margin-top: 1%;
+    }
+    .subhome{
+        margin-top: -5%;
     }
     .subtitulo{
         font-size: large;
@@ -308,6 +334,7 @@ h3{
         width: auto;
         height: 50vh;
         border-radius: 10%;
+        margin-top: 12%;
 }
      .navpaginas{
         display: inline;
