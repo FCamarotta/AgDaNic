@@ -1,0 +1,18 @@
+@use "variables" as v;
+footer{
+ font-family: v.$fuente3;
+    .redessocialesfooter{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+        .redes{
+            list-style: none;
+        }
+            .logosredes{
+                height: 55px;
+                width: 65x ;
+            
+            
+}
+}

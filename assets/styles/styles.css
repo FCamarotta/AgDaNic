@@ -1,557 +1,324 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Michroma&family=Oswald:wght@200..700&display=swap');
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Michroma&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: rgb(197, 197, 197);
 
+body {
+  background-color: rgb(197, 197, 197);
 }
-h1{
-    text-align: center;
-    color: rgb(0, 0, 116);
-    font-size: 500%;
-    text-decoration: underline;
-    font-family: Oswald;
-    margin-top: -10%;
+body #podescontactarnosvia {
+  color: rgb(9, 118, 182);
+  font-family: Anton;
+  text-decoration: underline;
 }
-.LogodeAgDaNic{
-    height: 20vh;
-    width: 10vw;
-    display: flex;
-    display: inline;
-    align-items: start;
-}
-.logosredes{
-    height: 55px;
-    width: 55px ;
-    object-fit: contain;
-}
-ul{
-    list-style: none; 
-    text-align: right;
-    flex-direction: row;
-    
-}
-a{
-    text-decoration: none;
-    color: green;
-    font-size:x-large;
-    font-family: Michroma;
-    
-}
-.navepaginas:hover{
-     background-color: green;
-    color: rgb(197, 197, 197);
-}
-.navpaginas{
-    display: inline;
-}
-.navegarpaginas{
-    margin-top: -10%;
-}
-/* modificacion del header */
-.gal{
-    margin-top: 2%;
-}
-.tien{
-    margin-top: 2%;
-}
-.sobren{
-    margin-top: 2%;
-}
-.contac{
-    margin-top: 2%;
-}
-.subtitulo{
-    font-size: xx-large;
-    text-decoration: underline;
-    color: rgb(12, 57, 153);
-    font-family: Oswald;
-    margin-top: 5%;
-}
-.carruseltuercas{
-    height: 75vh;
-    width: 75vh;
-    float:left;
-}
-.piedepagina{
-    font-size: small;
-    clear: both;
-}
-#Contactos{
-    text-align: right;
-    font-family: Oswald;
-    text-decoration: underline;
-    color: rgb(44, 44, 230);
-}
-iframe{
-    height: 50vh;
-    width: 90vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-form{
-    text-align: center;
-}
-.textoinicio{
-    text-align: center;
-    margin: 10%;
-    font-size: larger;
-}
-.carousel-item{
-     height: auto;
-    width: 50vw;
-}
-.carousel-inner{
-    padding-left: 25%;
 
+.main-contactos .formulario {
+  align-content: start;
+  font-family: Anton;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  width: 25vw;
 }
-.preciobarrales{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 4/5;
-    grid-row: 4/4;
+.main-contactos iframe {
+  height: 50vh;
+  width: 50vw;
+  align-content: center;
 }
-.preciofocoled{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 4/4;
+
+.subtitulo {
+  font-size: xx-large;
+  text-decoration: underline;
+  color: rgb(46, 5, 156);
+  font-family: Michroma;
+  margin-top: 10%;
 }
-.precioclavos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 4/4;
+
+.sectiontienda {
+  display: grid;
+  grid-template-areas: "at b c d" "e f g h";
+  justify-items: center;
+  align-items: center;
 }
-.precioprecintos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 4/4;
+.sectiontienda .at {
+  grid-area: "at";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-.preciotuercas{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 4/5;
-    grid-row: 2/2;
+.sectiontienda .b {
+  grid-area: "b";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-.preciomanguera{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 2/2;
+.sectiontienda .c {
+  grid-area: "c";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-.preciotornillos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 2/2;
+.sectiontienda .d {
+  grid-area: "d";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-.preciotriples{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 2/2;
-    
+.sectiontienda .e {
+  grid-area: "e";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.sectiontienda .f {
+  grid-area: "f";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-section{
-    display: grid;
-    grid-template-areas:
-     "at b c d"
-     "e f g h";
-     justify-items: center;
-     align-items: center;
-                          
+.sectiontienda .g {
+  grid-area: "g";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-.at{
-    grid-area: "at";
-    justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
+.sectiontienda .h {
+  grid-area: "h";
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
 }
-.b{
-    grid-area: "b";
-    justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
+.sectiontienda .preciobarrales {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 4/4;
 }
-.c{
-    grid-area: "c";
-    justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
+.sectiontienda .preciofocoled {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 4/4;
 }
-.d{
-     grid-area: "d";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     
+.sectiontienda .precioclavos {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 4/4;
 }
-.e{
-     grid-area: "e";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     
+.sectiontienda .precioprecintos {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 4/4;
 }
-.f{
-     grid-area: "f";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
+.sectiontienda .preciotuercas {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 2/2;
 }
-.g{
-     grid-area: "g";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
+.sectiontienda .preciomanguera {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 2/2;
 }
-.h{
-     grid-area: "h";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
+.sectiontienda .preciotornillos {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/2;
 }
-h3{
-    text-decoration:underline;
-    font-family: Anton;
+.sectiontienda .preciotriples {
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 40%;
+  color: rgb(67, 138, 67);
+  text-decoration: solid;
+  font-family: Anton;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/2;
 }
-.boton-tienda{
-    background-color: black;
-    color: white;
-    border-color: white;
-    border-radius: 10%;
-    margin-left: 45%;
-    font-size: large;
-    font-family: Michroma;
-    
+
+.boton-tienda {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 10%;
+  margin-left: 45%;
+  font-size: large;
+  font-family: Michroma;
 }
-.boton-tienda:hover{
-     background-color: white;
-    color: black;
-    border-color: black;
-    border-radius: 10%;
-    margin-left: 45%;
-    font-size: large;
-    font-family: Michroma;
+.boton-tienda:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-radius: 10%;
+  margin-left: 45%;
+  font-size: large;
+  font-family: Michroma;
 }
-/* responsive */
-@media(max-width:425px){
-    .LogodeAgDaNic{
-        width: 20vw;
-        height: 10vh;
-        align-items: center;
-    }
-    .navegarpaginas{
-        margin-top: -30%;
-    }
-    .homecelu{
-        margin-top: -40%;
-    }
-    h1{ 
-        text-align: center;
-    color: rgb(0, 0, 116);
-    font-size: 200%;
-    text-decoration: underline;
-    font-family: Oswald;
-    margin-top: 1%;
-    }
-    .subhome{
-        margin-top: -5%;
-    }
-    .subtitulo{
-        font-size: large;
-    text-decoration: underline;
-    color: rgb(12, 57, 153);
-    font-family: Oswald;
-    padding-top: 10%;
-    }
-    .carruseltuercas{
-        width: auto;
-        height: 50vh;
-        border-radius: 10%;
-        margin-top: 12%;
+
+.textosobrenosotros {
+  border: solid;
+  text-align: justify;
+  font-family: Michroma;
 }
-     .navpaginas{
-        display: inline;
+
+.subtitulogaleria {
+  font-size: xx-large;
+  text-decoration: underline;
+  color: rgb(12, 57, 153);
+  font-family: Anton;
+  margin-top: 10%;
 }
-.redes{
-    display: inline;
+
+.carousel-inner {
+  padding-left: 25%;
 }
-.textosobrenosotros{
-    font-size: smaller;
-    text-align: center;
-    font-family: Oswald;
-    color: black;
-    text-decoration: solid;
+.carousel-inner .carousel-item {
+  height: auto;
+  width: 50vw;
+  margin-top: 5%;
 }
-section{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8,1fr);
+
+main {
+  display: flex;
 }
-.at{
-    grid-area: "at";
-    justify-items: center;
-     align-items: center;
-     grid-column: 1/2;
-     grid-row: 1/2;
+main .carruseltuercas {
+  height: auto;
+  width: 75vh;
+  float: left;
+  margin-top: 8%;
+  border-radius: 5%;
+  border: solid;
 }
-.b{
-    grid-area: "b";
-    justify-items: center;
-     align-items: center;
-     grid-column: 2/3;
-     grid-row: 1/2;
+main .textoinicio {
+  text-align: center;
+  margin: 10%;
+  font-size: larger;
+  border: solid;
+  font-family: Michroma;
 }
-.c{
-    grid-area: "c";
-    justify-items: center;
-     align-items: center;
-     grid-column: 1/2;
-     grid-row: 3/4;
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
-.d{
-     grid-area: "d";
-     justify-items: center;
-     align-items: center;
-     grid-column: 2/3;
-     grid-row: 3/4;
-     
+header .LogodeAgDaNic {
+  height: 20vh;
+  width: 10vw;
+  display: flex;
+  display: inline;
+  align-items: start;
 }
-.e{
-     grid-area: "e";
-     justify-items: center;
-     align-items: center;
-    grid-column: 1/2;
-     grid-row: 5/6;
-     
+header h1 {
+  text-align: center;
+  color: rgb(0, 0, 116);
+  font-size: 500%;
+  text-decoration: underline;
+  font-family: Oswald;
+  margin-top: -10%;
 }
-.f{
-     grid-area: "f";
-     justify-items: center;
-     align-items: center;
-    grid-column: 2/3;
-     grid-row: 5/6;
+header .subhome {
+  font-size: medium;
+  text-decoration: underline;
+  color: black;
+  font-family: Oswald;
+  margin-top: 5%;
 }
-.g{
-     grid-area: "g";
-     justify-items: center;
-     align-items: center;
-     grid-column: 1/2;
-     grid-row: 7/8;
+header .navegarpaginas {
+  margin-top: -10%;
 }
-.h{
-     grid-area: "h";
-     justify-items: center;
-     align-items: center;
-     grid-column: 2/3;
-     grid-row: 7/8;
+header ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 8px;
+  margin-left: 75%;
 }
-.preciobarrales{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 2/3;
+header a {
+  text-decoration: none;
+  color: green;
+  font-size: x-large;
+  font-family: Anton;
 }
-.preciofocoled{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 2/3;
+header .navepaginas:hover {
+  background-color: green;
+  color: rgb(197, 197, 197);
 }
-.precioclavos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 4/5;
+
+footer {
+  font-family: Anton;
 }
-.precioprecintos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 4/5;
+footer .redessocialesfooter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.preciotuercas{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 6/7;
+footer .redes {
+  list-style: none;
 }
-.preciomanguera{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 6/7;
+footer .logosredes {
+  height: 55px;
+  width: 65x;
 }
-.preciotornillos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 8/9;
-}
-.preciotriples{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: Anton;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 8/9;
-    
-}
-.main-contactos{
-   align-items: start;
-}
-.formulario{
-    text-align: start;
-    font-size: medium;
-    height: auto;
-    width: 10px;
-    font-size: small;
-    font-family: Michroma;
-    color: black;
-}
-iframe{
-    width: auto;
-}
-h2{
-    font-size: medium;
-}
-h3{
-    text-decoration:underline;
-    font-family: Anton;
-}
-.boton-tienda{
-    background-color: black;
-    color: white;
-    border-color: white;
-    border-radius: 10%;
-    margin-left: 25%;
-    margin-bottom: 20%;
-    font-size: large;
-    font-family: Michroma;
-    
-}
-.boton-tienda:hover{
-     background-color: white;
-    color: black;
-    border-color: black;
-    border-radius: 10%;
-    margin-left: 25%;
-    margin-bottom: 20%;
-    font-size: large;
-    font-family: Michroma;
-}
-.carousel-inner{
-    margin-bottom: 15%;
-}
-}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Michroma&family=Oswald:wght@200..700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(197, 197, 197);
+
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 116);
+    font-size: 500%;
+    text-decoration: underline;
+    font-family: Oswald;
+    margin-top: -10%;
+}
+.LogodeAgDaNic{
+    height: 20vh;
+    width: 10vw;
+    display: flex;
+    display: inline;
+    align-items: start;
+}
+.logosredes{
+    height: 55px;
+    width: 55px ;
+    object-fit: contain;
+}
+ul{
+    list-style: none; 
+    text-align: right;
+    flex-direction: row;
+    
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-size:x-large;
+    font-family: Michroma;
+    
+}
+.navepaginas:hover{
+     background-color: green;
+    color: rgb(197, 197, 197);
+}
+.navpaginas{
+    display: inline;
+}
+.navegarpaginas{
+    margin-top: -10%;
+}
+/* modificacion del header */
+.gal{
+    margin-top: 2%;
+}
+.tien{
+    margin-top: 2%;
+}
+.sobren{
+    margin-top: 2%;
+}
+.contac{
+    margin-top: 2%;
+}
+.subtitulo{
+    font-size: xx-large;
+    text-decoration: underline;
+    color: rgb(12, 57, 153);
+    font-family: Oswald;
+    margin-top: 5%;
+}
+.carruseltuercas{
+    height: 75vh;
+    width: 75vh;
+    float:left;
+}
+.piedepagina{
+    font-size: small;
+    clear: both;
+}
+#Contactos{
+    text-align: right;
+    font-family: Oswald;
+    text-decoration: underline;
+    color: rgb(44, 44, 230);
+}
+iframe{
+    height: 50vh;
+    width: 90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+form{
+    text-align: center;
+}
+.textoinicio{
+    text-align: center;
+    margin: 10%;
+    font-size: larger;
+}
+.carousel-item{
+     height: auto;
+    width: 50vw;
+}
+.carousel-inner{
+    padding-left: 25%;
+
+}
+.preciobarrales{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 4/4;
+}
+.preciofocoled{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 4/4;
+}
+.precioclavos{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/4;
+}
+.precioprecintos{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/4;
+}
+.preciotuercas{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2/2;
+}
+.preciomanguera{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/2;
+}
+.preciotornillos{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+.preciotriples{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section{
+    display: grid;
+    grid-template-areas:
+     "at b c d"
+     "e f g h";
+     justify-items: center;
+     align-items: center;
+                          
+}
+.at{
+    grid-area: "at";
+    justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+}
+.b{
+    grid-area: "b";
+    justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+}
+.c{
+    grid-area: "c";
+    justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+}
+.d{
+     grid-area: "d";
+     justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+     
+}
+.e{
+     grid-area: "e";
+     justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+     
+}
+.f{
+     grid-area: "f";
+     justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+}
+.g{
+     grid-area: "g";
+     justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+}
+.h{
+     grid-area: "h";
+     justify-items: center;
+     align-items: center;
+     height: 200px;
+     width: 200px;
+}
+h3{
+    text-decoration:underline;
+    font-family: Anton;
+}
+.boton-tienda{
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 10%;
+    margin-left: 45%;
+    font-size: large;
+    font-family: Michroma;
+    
+}
+.boton-tienda:hover{
+     background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 10%;
+    margin-left: 45%;
+    font-size: large;
+    font-family: Michroma;
+}
+/* responsive */
+@media(max-width:425px){
+    .LogodeAgDaNic{
+        width: 20vw;
+        height: 10vh;
+        align-items: center;
+    }
+    .navegarpaginas{
+        margin-top: -30%;
+    }
+    .homecelu{
+        margin-top: -40%;
+    }
+    h1{ 
+        text-align: center;
+    color: rgb(0, 0, 116);
+    font-size: 200%;
+    text-decoration: underline;
+    font-family: Oswald;
+    margin-top: 1%;
+    }
+    .subhome{
+        margin-top: -5%;
+    }
+    .subtitulo{
+        font-size: large;
+    text-decoration: underline;
+    color: rgb(12, 57, 153);
+    font-family: Oswald;
+    padding-top: 10%;
+    }
+    .carruseltuercas{
+        width: auto;
+        height: 50vh;
+        border-radius: 10%;
+        margin-top: 12%;
+}
+     .navpaginas{
+        display: inline;
+}
+.redes{
+    display: inline;
+}
+.textosobrenosotros{
+    font-size: smaller;
+    text-align: center;
+    font-family: Oswald;
+    color: black;
+    text-decoration: solid;
+}
+section{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+}
+.at{
+    grid-area: "at";
+    justify-items: center;
+     align-items: center;
+     grid-column: 1/2;
+     grid-row: 1/2;
+}
+.b{
+    grid-area: "b";
+    justify-items: center;
+     align-items: center;
+     grid-column: 2/3;
+     grid-row: 1/2;
+}
+.c{
+    grid-area: "c";
+    justify-items: center;
+     align-items: center;
+     grid-column: 1/2;
+     grid-row: 3/4;
+}
+.d{
+     grid-area: "d";
+     justify-items: center;
+     align-items: center;
+     grid-column: 2/3;
+     grid-row: 3/4;
+     
+}
+.e{
+     grid-area: "e";
+     justify-items: center;
+     align-items: center;
+    grid-column: 1/2;
+     grid-row: 5/6;
+     
+}
+.f{
+     grid-area: "f";
+     justify-items: center;
+     align-items: center;
+    grid-column: 2/3;
+     grid-row: 5/6;
+}
+.g{
+     grid-area: "g";
+     justify-items: center;
+     align-items: center;
+     grid-column: 1/2;
+     grid-row: 7/8;
+}
+.h{
+     grid-area: "h";
+     justify-items: center;
+     align-items: center;
+     grid-column: 2/3;
+     grid-row: 7/8;
+}
+.preciobarrales{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.preciofocoled{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.precioclavos{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.precioprecintos{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.preciotuercas{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.preciomanguera{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+.preciotornillos{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+.preciotriples{
+    margin: 5% ;
+    display: inline-block;
+    align-items:center;
+    margin-bottom: 40%;
+    color: rgb(67, 138, 67);
+    text-decoration: solid;
+    font-family: Anton;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 8/9;
+    
+}
+.main-contactos{
+   align-items: start;
+}
+.formulario{
+    text-align: start;
+    font-size: medium;
+    height: auto;
+    width: 10px;
+    font-size: small;
+    font-family: Michroma;
+    color: black;
+}
+iframe{
+    width: auto;
+}
+h2{
+    font-size: medium;
+}
+h3{
+    text-decoration:underline;
+    font-family: Anton;
+}
+.boton-tienda{
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: Michroma;
+    
+}
+.boton-tienda:hover{
+     background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: Michroma;
+}
+.carousel-inner{
+    margin-bottom: 15%;
+}
+}

@@ -1,0 +1,17 @@
+@use "variables" as v;
+.subtitulogaleria{
+    font-size: xx-large;
+    text-decoration: underline;
+    color: rgb(12, 57, 153);
+    font-family: v.$fuente3;
+    margin-top: 10%;
+}
+.carousel-inner{
+    padding-left: 25%;
+.carousel-item{
+     height: auto;
+    width: 50vw;
+    margin-top: 5%;
+}
+}
+

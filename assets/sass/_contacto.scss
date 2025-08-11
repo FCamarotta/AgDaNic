@@ -1,0 +1,18 @@
+@use "variables" as v;
+.main-contactos{
+    .formulario{
+        align-content: start;
+        font-family: v.$fuente3;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        width: 25vw;
+    }
+        iframe{
+        height: 50vh;
+        width: 50vw;
+        align-content: center;
+}
+
+}
