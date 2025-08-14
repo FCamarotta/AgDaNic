@@ -4,3 +4,12 @@
     text-align: justify;
     font-family: v.$fuente2;
 }
+@include v.mobile{
+    .textosobrenosotros{
+    border: solid;
+    text-align: justify;
+    font-family: v.$fuente2;
+    font-size: xx-small;
+    color: black;
+}
+}

@@ -15,4 +15,26 @@ footer{
             
             
 }
+@include v.mobile{
+    footer{
+    font-family: v.$fuente3;
+    }
+    .redessocialesfooter{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: space-evenly;
+        }
+        .redes{
+            list-style: none;
+        }
+        .logosredes{
+                height: 45px;
+                width: 45px ;
+            }
+            .piedepagina{
+                font-size: small;
+                text-align: center;
+            }
+        }
 }

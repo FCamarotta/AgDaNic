@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "anims";
 .subtitulo{
      font-size: xx-large;
     text-decoration: underline;
@@ -6,7 +7,7 @@
     font-family: v.$fuente2;
     margin-top: 10%;
 }
-.sectiontienda{
+section { 
     display: grid;
     grid-template-areas:
      "at b c d"
@@ -19,6 +20,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
 }
 .b{
     grid-area: "b";
@@ -26,6 +30,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
 }
 .c{
     grid-area: "c";
@@ -33,6 +40,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
 }
 .d{
      grid-area: "d";
@@ -40,6 +50,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
      
 }
 .e{
@@ -48,6 +61,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
      
 }
 .f{
@@ -56,6 +72,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
 }
 .g{
      grid-area: "g";
@@ -63,6 +82,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
 }
 .h{
      grid-area: "h";
@@ -70,6 +92,9 @@
      align-items: center;
      height: 200px;
      width: 200px;
+     &:hover{
+        @extend %scaleup;
+     }
 }
 .preciobarrales{
     margin: 5% ;

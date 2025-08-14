@@ -18,4 +18,24 @@ main{
         border: solid;
         font-family: v.$fuente2;
         }
+        @include v.mobile{
+            .carruseltuercas{
+        height: 40vh;
+        width: 40vw;
+        float:left;
+        margin-top: 8%;
+        border-radius: 5%;
+        border: solid;
+        
+    }
+        .textoinicio{
+        text-align: center;
+        width: 100vw;
+        margin: 10%;
+        font-size: xx-small;
+        border: solid;
+        font-family: v.$fuente2;
+        color: black;
+        }
+    }
 }

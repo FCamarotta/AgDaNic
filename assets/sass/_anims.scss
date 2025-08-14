@@ -1,0 +1,11 @@
+@keyframes scale{
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 1.5;
+    }
+}
+%scaleup{
+    animation: scale 1s forwards ease-in-out;
+}

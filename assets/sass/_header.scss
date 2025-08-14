@@ -46,4 +46,50 @@ a{
     background-color:green;
     color: v.$colorprimario;
 }
+@include v.mobile{
+    .LogodeAgDaNic{
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    display: inline;
+    align-items: start;
+    margin: 1%;
+    }
+    h1{
+    text-align: center;
+    color: rgb(0, 0, 116);
+    font-size: x-large;
+    text-decoration: underline;
+    font-family: v.$fuente1;
+    }
+    .subhome{
+    font-size: small;
+    text-decoration: underline;
+    color: black;
+    font-family: v.$fuente1;
+    
+    }
+    .navegarpaginas{
+    margin-top: -20%;
+}
+ul{
+    display: flex;
+    list-style: none; 
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 75%;
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-size:small;
+    font-family: v.$fuente2;
+}
+.navepaginas:hover{
+    
+    background-color:green;
+    color: v.$colorprimario;
+}
+    
+}
 }

@@ -14,5 +14,20 @@
         width: 50vw;
         align-content: center;
 }
+@include v.mobile{
+    .main-contactos{
+   align-items: start;
+}
+.formulario{
+    
+    width: 80vw;
+    font-size: small;
+}
+iframe{
+    width: 60vw;
+    height: 35vh;
+    align-content: end;
+}
 
+}
 }

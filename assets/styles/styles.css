@@ -8,10 +8,30 @@
 body {
   background-color: rgb(197, 197, 197);
 }
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body #podescontactarnosvia {
   color: rgb(9, 118, 182);
   font-family: Anton;
   text-decoration: underline;
+}
+@media (max-width: 430px) {
+  body .subtitulo {
+    font-size: small;
+    text-decoration: underline;
+    color: rgb(0, 114, 38);
+    margin-top: 10%;
+  }
+  body #podescontactarnosvia {
+    color: rgb(9, 118, 182);
+    font-family: Anton;
+    text-decoration: underline;
+    font-size: small;
+    text-align: center;
+  }
 }
 
 .main-contactos .formulario {
@@ -28,6 +48,32 @@ body #podescontactarnosvia {
   width: 50vw;
   align-content: center;
 }
+@media (max-width: 430px) {
+  .main-contactos .main-contactos {
+    align-items: start;
+  }
+  .main-contactos .formulario {
+    width: 80vw;
+    font-size: small;
+  }
+  .main-contactos iframe {
+    width: 60vw;
+    height: 35vh;
+    align-content: end;
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+section .at:hover, section .b:hover, section .c:hover, section .d:hover, section .e:hover, section .f:hover, section .g:hover, section .h:hover {
+  animation: scale 1s forwards ease-in-out;
+}
 
 .subtitulo {
   font-size: xx-large;
@@ -37,69 +83,69 @@ body #podescontactarnosvia {
   margin-top: 10%;
 }
 
-.sectiontienda {
+section {
   display: grid;
   grid-template-areas: "at b c d" "e f g h";
   justify-items: center;
   align-items: center;
 }
-.sectiontienda .at {
+section .at {
   grid-area: "at";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .b {
+section .b {
   grid-area: "b";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .c {
+section .c {
   grid-area: "c";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .d {
+section .d {
   grid-area: "d";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .e {
+section .e {
   grid-area: "e";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .f {
+section .f {
   grid-area: "f";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .g {
+section .g {
   grid-area: "g";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .h {
+section .h {
   grid-area: "h";
   justify-items: center;
   align-items: center;
   height: 200px;
   width: 200px;
 }
-.sectiontienda .preciobarrales {
+section .preciobarrales {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -111,7 +157,7 @@ body #podescontactarnosvia {
   grid-column: 4/5;
   grid-row: 4/4;
 }
-.sectiontienda .preciofocoled {
+section .preciofocoled {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -123,7 +169,7 @@ body #podescontactarnosvia {
   grid-column: 3/4;
   grid-row: 4/4;
 }
-.sectiontienda .precioclavos {
+section .precioclavos {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -135,7 +181,7 @@ body #podescontactarnosvia {
   grid-column: 2/3;
   grid-row: 4/4;
 }
-.sectiontienda .precioprecintos {
+section .precioprecintos {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -147,7 +193,7 @@ body #podescontactarnosvia {
   grid-column: 1/2;
   grid-row: 4/4;
 }
-.sectiontienda .preciotuercas {
+section .preciotuercas {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -159,7 +205,7 @@ body #podescontactarnosvia {
   grid-column: 4/5;
   grid-row: 2/2;
 }
-.sectiontienda .preciomanguera {
+section .preciomanguera {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -171,7 +217,7 @@ body #podescontactarnosvia {
   grid-column: 3/4;
   grid-row: 2/2;
 }
-.sectiontienda .preciotornillos {
+section .preciotornillos {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -183,7 +229,7 @@ body #podescontactarnosvia {
   grid-column: 2/3;
   grid-row: 2/2;
 }
-.sectiontienda .preciotriples {
+section .preciotriples {
   margin: 5%;
   display: inline-block;
   align-items: center;
@@ -221,11 +267,20 @@ body #podescontactarnosvia {
   font-family: Michroma;
 }
 
-.subtitulogaleria {
+@media (max-width: 430px) {
+  .textosobrenosotros {
+    border: solid;
+    text-align: justify;
+    font-family: Michroma;
+    font-size: xx-small;
+    color: black;
+  }
+}
+.subtitulo {
   font-size: xx-large;
   text-decoration: underline;
-  color: rgb(12, 57, 153);
-  font-family: Anton;
+  color: rgb(46, 5, 156);
+  font-family: Michroma;
   margin-top: 10%;
 }
 
@@ -255,6 +310,25 @@ main .textoinicio {
   font-size: larger;
   border: solid;
   font-family: Michroma;
+}
+@media (max-width: 430px) {
+  main .carruseltuercas {
+    height: 40vh;
+    width: 40vw;
+    float: left;
+    margin-top: 8%;
+    border-radius: 5%;
+    border: solid;
+  }
+  main .textoinicio {
+    text-align: center;
+    width: 100vw;
+    margin: 10%;
+    font-size: xx-small;
+    border: solid;
+    font-family: Michroma;
+    color: black;
+  }
 }
 
 header {
@@ -304,6 +378,49 @@ header .navepaginas:hover {
   background-color: green;
   color: rgb(197, 197, 197);
 }
+@media (max-width: 430px) {
+  header .LogodeAgDaNic {
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    display: inline;
+    align-items: start;
+    margin: 1%;
+  }
+  header h1 {
+    text-align: center;
+    color: rgb(0, 0, 116);
+    font-size: x-large;
+    text-decoration: underline;
+    font-family: Oswald;
+  }
+  header .subhome {
+    font-size: small;
+    text-decoration: underline;
+    color: black;
+    font-family: Oswald;
+  }
+  header .navegarpaginas {
+    margin-top: -20%;
+  }
+  header ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 75%;
+  }
+  header a {
+    text-decoration: none;
+    color: green;
+    font-size: small;
+    font-family: Michroma;
+  }
+  header .navepaginas:hover {
+    background-color: green;
+    color: rgb(197, 197, 197);
+  }
+}
 
 footer {
   font-family: Anton;
@@ -319,6 +436,28 @@ footer .redes {
 footer .logosredes {
   height: 55px;
   width: 65x;
+}
+@media (max-width: 430px) {
+  footer footer {
+    font-family: Anton;
+  }
+  footer .redessocialesfooter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-evenly;
+  }
+  footer .redes {
+    list-style: none;
+  }
+  footer .logosredes {
+    height: 45px;
+    width: 45px;
+  }
+  footer .piedepagina {
+    font-size: small;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
