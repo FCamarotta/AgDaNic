@@ -211,4 +211,7 @@ section {
     font-size: large;
     font-family: v.$fuente2;
 }
+@include v.mobile{
+    
+}
 }

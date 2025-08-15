@@ -11,12 +11,12 @@ $fuente3: Anton;
     box-sizing: border-box;
 }
 body{
+    background-color: $colorprimario;
     *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
-    background-color: $colorprimario;
     #podescontactarnosvia{
         color: rgb(9, 118, 182);
         font-family:$fuente3;
