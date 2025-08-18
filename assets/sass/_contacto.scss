@@ -16,8 +16,6 @@
     width: 50vw;
     align-content: center;
   }
-
-  // 🔹 Responsive (mobile)
   @include v.mobile {
     align-items: start;
 
