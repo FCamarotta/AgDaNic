@@ -7,194 +7,134 @@
     font-family: v.$fuente2;
     margin-top: 10%;
 }
-section { 
+section{
     display: grid;
-    grid-template-areas:
-     "at b c d"
-     "e f g h";
-     justify-items: center;
-     align-items: center;
-     .at{
-    grid-area: "at";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    align-items: center;
+    .at{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-}
-.b{
-    grid-area: "b";
-    justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .b{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-}
-.c{
-    grid-area: "c";
-    justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .c{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-}
-.d{
-     grid-area: "d";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .d{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-     
-}
-.e{
-     grid-area: "e";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .e{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-     
-}
-.f{
-     grid-area: "f";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .f{
+         grid-column: 2/3;
+        grid-row: 3/4;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-}
-.g{
-     grid-area: "g";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .g{
+         grid-column: 3/4;
+        grid-row: 3/4;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-}
-.h{
-     grid-area: "h";
-     justify-items: center;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-     &:hover{
+    }
+    .h{
+         grid-column: 4/5;
+        grid-row: 3/4;
+        height: 200px;
+        width: 200px;
+         &:hover{
         @extend %scaleup;
      }
-}
-.preciobarrales{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 4/5;
-    grid-row: 4/4;
-}
-.preciofocoled{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 4/4;
-}
-.precioclavos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 4/4;
-}
-.precioprecintos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 4/4;
-}
-.preciotuercas{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 4/5;
-    grid-row: 2/2;
-}
-.preciomanguera{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 2/2;
-}
-.preciotornillos{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 2/2;
-}
-.preciotriples{
-    margin: 5% ;
-    display: inline-block;
-    align-items:center;
-    margin-bottom: 40%;
-    color: rgb(67, 138, 67);
-    text-decoration: solid;
-    font-family: v.$fuente3;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 2/2;
-    
-}
-}
-.boton-tienda{
+    }
+    .ppre{
+         grid-column: 1/2;
+        grid-row: 2/3;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .pc{
+         grid-column: 2/3;
+        grid-row: 2/3;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .pf{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .ptri{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .pm{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .ptor{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .pt{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    .pb{
+        grid-column: 4/5;
+        grid-row: 4/5;
+        font-family: v.$fuente2;
+        color: green;
+    }
+    }
+    .boton-tienda{
     background-color: black;
     color: white;
     border-color: white;
@@ -202,16 +142,115 @@ section {
     margin-left: 45%;
     font-size: large;
     font-family: v.$fuente2;
-     &:hover{
-      background-color: white;
+    &:hover{
+     background-color: white;
     color: black;
     border-color: black;
     border-radius: 10%;
     margin-left: 45%;
     font-size: large;
     font-family: v.$fuente2;
+    }
 }
 @include v.mobile{
+    section{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    }
+    section .at{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    section .b{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    section .c{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    section .d{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    section .e{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    section .f{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    section .g{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    section .h{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+    section .ppre{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    section .pc{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    section .pf{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    section .ptri{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    section .pm{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    section .ptor{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    section .pt{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    section .pb{
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+    .boton-tienda{
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: Michroma;
+    &:hover{
+     background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: Michroma;
+}
+}
+}
+
+
+
+
+
+
+
+
+
     
-}
-}
+
+       

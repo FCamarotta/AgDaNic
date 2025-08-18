@@ -85,161 +85,106 @@ section .at:hover, section .b:hover, section .c:hover, section .d:hover, section
 
 section {
   display: grid;
-  grid-template-areas: "at b c d" "e f g h";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
 }
 section .at {
-  grid-area: "at";
-  justify-items: center;
-  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
   height: 200px;
   width: 200px;
 }
 section .b {
-  grid-area: "b";
-  justify-items: center;
-  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
   height: 200px;
   width: 200px;
 }
 section .c {
-  grid-area: "c";
-  justify-items: center;
-  align-items: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
   height: 200px;
   width: 200px;
 }
 section .d {
-  grid-area: "d";
-  justify-items: center;
-  align-items: center;
+  grid-column: 4/5;
+  grid-row: 1/2;
   height: 200px;
   width: 200px;
 }
 section .e {
-  grid-area: "e";
-  justify-items: center;
-  align-items: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
   height: 200px;
   width: 200px;
 }
 section .f {
-  grid-area: "f";
-  justify-items: center;
-  align-items: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
   height: 200px;
   width: 200px;
 }
 section .g {
-  grid-area: "g";
-  justify-items: center;
-  align-items: center;
+  grid-column: 3/4;
+  grid-row: 3/4;
   height: 200px;
   width: 200px;
 }
 section .h {
-  grid-area: "h";
-  justify-items: center;
-  align-items: center;
+  grid-column: 4/5;
+  grid-row: 3/4;
   height: 200px;
   width: 200px;
 }
-section .preciobarrales {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
-  grid-column: 4/5;
-  grid-row: 4/4;
-}
-section .preciofocoled {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
-  grid-column: 3/4;
-  grid-row: 4/4;
-}
-section .precioclavos {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 4/4;
-}
-section .precioprecintos {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
+section .ppre {
   grid-column: 1/2;
-  grid-row: 4/4;
+  grid-row: 2/3;
+  font-family: Michroma;
+  color: green;
 }
-section .preciotuercas {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
-  grid-column: 4/5;
-  grid-row: 2/2;
-}
-section .preciomanguera {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
-  grid-column: 3/4;
-  grid-row: 2/2;
-}
-section .preciotornillos {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
+section .pc {
   grid-column: 2/3;
-  grid-row: 2/2;
+  grid-row: 2/3;
+  font-family: Michroma;
+  color: green;
 }
-section .preciotriples {
-  margin: 5%;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 40%;
-  color: rgb(67, 138, 67);
-  text-decoration: solid;
-  font-family: Anton;
-  display: grid;
+section .pf {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-family: Michroma;
+  color: green;
+}
+section .ptri {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  font-family: Michroma;
+  color: green;
+}
+section .pm {
   grid-column: 1/2;
-  grid-row: 2/2;
+  grid-row: 4/5;
+  font-family: Michroma;
+  color: green;
+}
+section .ptor {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  font-family: Michroma;
+  color: green;
+}
+section .pt {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  font-family: Michroma;
+  color: green;
+}
+section .pb {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  font-family: Michroma;
+  color: green;
 }
 
 .boton-tienda {
@@ -259,6 +204,97 @@ section .preciotriples {
   margin-left: 45%;
   font-size: large;
   font-family: Michroma;
+}
+
+@media (max-width: 430px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+  section .at {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  section .b {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  section .c {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  section .d {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  section .e {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  section .f {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  section .g {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  section .h {
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+  section .ppre {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  section .pc {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  section .pf {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  section .ptri {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  section .pm {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  section .ptor {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  section .pt {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  section .pb {
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+  .boton-tienda {
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: Michroma;
+  }
+  .boton-tienda:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: Michroma;
+  }
 }
 .textosobrenosotros {
   border: solid;
