@@ -1,40 +1,44 @@
 @use "variables" as v;
-footer{
- font-family: v.$fuente3;
-    .redessocialesfooter{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-        .redes{
-            list-style: none;
-        }
-            .logosredes{
-                height: 55px;
-                width: 65x ;
-            
-            
-}
-@include v.mobile{
-    footer{
+
+footer {
+  font-family: v.$fuente3;
+
+  .redessocialesfooter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .redes {
+    list-style: none;
+  }
+
+  .logosredes {
+    height: 55px;
+    width: 70px;
+  }
+  @include v.mobile {
     font-family: v.$fuente3;
+
+    .redessocialesfooter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: space-evenly;
     }
-    .redessocialesfooter{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        justify-content: space-evenly;
-        }
-        .redes{
-            list-style: none;
-        }
-        .logosredes{
-                height: 45px;
-                width: 45px ;
-            }
-            .piedepagina{
-                font-size: small;
-                text-align: center;
-            }
-        }
+
+    .redes {
+      list-style: none;
+    }
+
+    .logosredes {
+      height: 45px;
+      width: 45px;
+    }
+
+    .piedepagina {
+      font-size: small;
+      text-align: center;
+    }
+  }
 }

@@ -1,41 +1,43 @@
 @use "variables" as v;
-main{
-    display: flex;
-    
-        .carruseltuercas{
-        height: auto;
-        width: 75vh;
-        float:left;
-        margin-top: 8%;
-        border-radius: 5%;
-        border: solid;
-        
+
+main {
+  display: flex;
+
+  .carruseltuercas {
+    height: auto;
+    width: 75vh;
+    float: left;
+    margin-top: 8%;
+    border-radius: 5%;
+    border: solid;
+  }
+
+  .textoinicio {
+    text-align: center;
+    margin: 10%;
+    font-size: larger;
+    border: solid;
+    font-family: v.$fuente2;
+  }
+
+  @include v.mobile {
+    .carruseltuercas {
+      height: 40vh;
+      width: 40vw;
+      float: left;
+      margin-top: 8%;
+      border-radius: 5%;
+      border: solid;
     }
-        .textoinicio{
-        text-align: center;
-        margin: 10%;
-        font-size: larger;
-        border: solid;
-        font-family: v.$fuente2;
-        }
-        @include v.mobile{
-            .carruseltuercas{
-        height: 40vh;
-        width: 40vw;
-        float:left;
-        margin-top: 8%;
-        border-radius: 5%;
-        border: solid;
-        
+
+    .textoinicio {
+      text-align: center;
+      width: 100vw;
+      margin: 10%;
+      font-size: xx-small;
+      border: solid;
+      font-family: v.$fuente2;
+      color: black;
     }
-        .textoinicio{
-        text-align: center;
-        width: 100vw;
-        margin: 10%;
-        font-size: xx-small;
-        border: solid;
-        font-family: v.$fuente2;
-        color: black;
-        }
-    }
+  }
 }

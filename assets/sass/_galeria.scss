@@ -1,17 +1,21 @@
 @use "variables" as v;
-.subtitulo{
-     font-size: xx-large;
-    text-decoration: underline;
-    color: rgb(46, 5, 156);
-    font-family: v.$fuente2;
-    margin-top: 10%;
+
+.subtitulo {
+  font-size: xx-large;
+  text-decoration: underline;
+  color: rgb(46, 5, 156);
+  font-family: v.$fuente2;
+  margin-top: 10%;
 }
-.carousel-inner{
-    padding-left: 25%;
-.carousel-item{
-     height: auto;
-    width: 50vw;
+
+.carousel-inner {
+  padding-left: 37%;
+
+  .carousel-item {
+    height: auto;
+    width: 25vw;
     margin-top: 5%;
+  }
 }
-}
+
 

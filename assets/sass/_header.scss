@@ -1,95 +1,106 @@
 @use "variables" as v;
-header{
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-    .LogodeAgDaNic{
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+
+  .LogodeAgDaNic {
     height: 20vh;
     width: 10vw;
     display: flex;
     display: inline;
     align-items: start;
-    }
-    h1{
+  }
+
+  h1 {
     text-align: center;
     color: rgb(0, 0, 116);
     font-size: 500%;
     text-decoration: underline;
     font-family: v.$fuente1;
     margin-top: -10%;
-    }
-    .subhome{
+  }
+
+  .subhome {
     font-size: medium;
     text-decoration: underline;
     color: black;
     font-family: v.$fuente1;
     margin-top: 5%;
-}
-.navegarpaginas{
+  }
+
+  .navegarpaginas {
     margin-top: -10%;
-}
-ul{
+  }
+
+  ul {
     display: flex;
-    list-style: none; 
+    list-style: none;
     flex-direction: row;
     gap: 8px;
     margin-left: 75%;
-}
-a{
+  }
+
+  a {
     text-decoration: none;
     color: green;
-    font-size:x-large;
-    font-family: v.$fuente3;
-}
-.navepaginas:hover{
-    
-    background-color:green;
-    color: v.$colorprimario;
-}
-@include v.mobile{
-    .LogodeAgDaNic{
-    height: 10vh;
-    width: 20vw;
-    display: flex;
-    display: inline;
-    align-items: start;
-    margin: 1%;
-    }
-    h1{
-    text-align: center;
-    color: rgb(0, 0, 116);
     font-size: x-large;
-    text-decoration: underline;
-    font-family: v.$fuente1;
-    }
-    .subhome{
-    font-size: small;
-    text-decoration: underline;
-    color: black;
-    font-family: v.$fuente1;
-    
-    }
-    .navegarpaginas{
-    margin-top: -20%;
-}
-ul{
-    display: flex;
-    list-style: none; 
-    flex-direction: column;
-    gap: 8px;
-    margin-left: 75%;
-}
-a{
-    text-decoration: none;
-    color: green;
-    font-size:small;
-    font-family: v.$fuente2;
-}
-.navepaginas:hover{
-    
-    background-color:green;
+    font-family: v.$fuente3;
+  }
+
+  .navepaginas:hover {
+    background-color: green;
     color: v.$colorprimario;
-}
-    
-}
+  }
+
+  @include v.mobile {
+    .LogodeAgDaNic {
+      height: 10vh;
+      width: 20vw;
+      display: flex;
+      display: inline;
+      align-items: start;
+      margin: 1%;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(0, 0, 116);
+      font-size: x-large;
+      text-decoration: underline;
+      font-family: v.$fuente1;
+    }
+
+    .subhome {
+      font-size: small;
+      text-decoration: underline;
+      color: black;
+      font-family: v.$fuente1;
+    }
+
+    .navegarpaginas {
+      margin-top: -20%;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      gap: 8px;
+      margin-left: 75%;
+    }
+
+    a {
+      text-decoration: none;
+      color: green;
+      font-size: small;
+      font-family: v.$fuente2;
+    }
+
+    .navepaginas:hover {
+      background-color: green;
+      color: v.$colorprimario;
+    }
+  }
 }

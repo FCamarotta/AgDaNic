@@ -1,248 +1,119 @@
 @use "variables" as v;
 @use "anims";
-.subtitulo{
-     font-size: xx-large;
-    text-decoration: underline;
-    color: rgb(46, 5, 156);
-    font-family: v.$fuente2;
-    margin-top: 10%;
-}
-section{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    justify-items: center;
-    align-items: center;
-    .at{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .b{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .c{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .d{
-        grid-column: 4/5;
-        grid-row: 1/2;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .e{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .f{
-         grid-column: 2/3;
-        grid-row: 3/4;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .g{
-         grid-column: 3/4;
-        grid-row: 3/4;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .h{
-         grid-column: 4/5;
-        grid-row: 3/4;
-        height: 200px;
-        width: 200px;
-         &:hover{
-        @extend %scaleup;
-     }
-    }
-    .ppre{
-         grid-column: 1/2;
-        grid-row: 2/3;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .pc{
-         grid-column: 2/3;
-        grid-row: 2/3;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .pf{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .ptri{
-        grid-column: 4/5;
-        grid-row: 2/3;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .pm{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .ptor{
-        grid-column: 2/3;
-        grid-row: 4/5;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .pt{
-        grid-column: 3/4;
-        grid-row: 4/5;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    .pb{
-        grid-column: 4/5;
-        grid-row: 4/5;
-        font-family: v.$fuente2;
-        color: green;
-    }
-    }
-    .boton-tienda{
-    background-color: black;
-    color: white;
-    border-color: white;
-    border-radius: 10%;
-    margin-left: 45%;
-    font-size: large;
-    font-family: v.$fuente2;
-    &:hover{
-     background-color: white;
-    color: black;
-    border-color: black;
-    border-radius: 10%;
-    margin-left: 45%;
-    font-size: large;
-    font-family: v.$fuente2;
-    }
-}
-@include v.mobile{
-    section{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8,1fr);
-    }
-    section .at{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    section .b{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    section .c{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    section .d{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    section .e{
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    section .f{
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-    section .g{
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-    section .h{
-        grid-column: 2/3;
-        grid-row: 7/8;
-    }
-    section .ppre{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    section .pc{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    section .pf{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    section .ptri{
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-    section .pm{
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-    section .ptor{
-        grid-column: 2/3;
-        grid-row: 6/7;
-    }
-    section .pt{
-        grid-column: 1/2;
-        grid-row: 8/9;
-    }
-    section .pb{
-        grid-column: 2/3;
-        grid-row: 8/9;
-    }
-    .boton-tienda{
-    background-color: black;
-    color: white;
-    border-color: white;
-    border-radius: 10%;
-    margin-left: 25%;
-    margin-bottom: 20%;
-    font-size: large;
-    font-family: Michroma;
-    &:hover{
-     background-color: white;
-    color: black;
-    border-color: black;
-    border-radius: 10%;
-    margin-left: 25%;
-    margin-bottom: 20%;
-    font-size: large;
-    font-family: Michroma;
-}
-}
+
+.subtitulo {
+  font-size: xx-large;
+  text-decoration: underline;
+  color: rgb(46, 5, 156);
+  font-family: v.$fuente2;
+  margin-top: 10%;
 }
 
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  .at, .b, .c, .d, .e, .f, .g, .h {
+    height: 200px;
+    width: 200px;
+
+    &:hover {
+      @extend %scaleup;
+    }
+  }
+
+  .at   { grid-column: 1/2; grid-row: 1/2; }
+  .b    { grid-column: 2/3; grid-row: 1/2; }
+  .c    { grid-column: 3/4; grid-row: 1/2; }
+  .d    { grid-column: 4/5; grid-row: 1/2; }
+  .e    { grid-column: 1/2; grid-row: 3/4; }
+  .f    { grid-column: 2/3; grid-row: 3/4; }
+  .g    { grid-column: 3/4; grid-row: 3/4; }
+  .h    { grid-column: 4/5; grid-row: 3/4; }
+
+  .ppre, .pc, .pf, .ptri, .pm, .ptor, .pt, .pb {
+    font-family: v.$fuente2;
+    color: green;
+  }
+
+  .ppre { grid-column: 1/2; grid-row: 2/3; }
+  .pc   { grid-column: 2/3; grid-row: 2/3; }
+  .pf   { grid-column: 3/4; grid-row: 2/3; }
+  .ptri { grid-column: 4/5; grid-row: 2/3; }
+  .pm   { grid-column: 1/2; grid-row: 4/5; }
+  .ptor { grid-column: 2/3; grid-row: 4/5; }
+  .pt   { grid-column: 3/4; grid-row: 4/5; }
+  .pb   { grid-column: 4/5; grid-row: 4/5; }
+}
+
+.boton-tienda {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 10%;
+  margin-left: 45%;
+  font-size: large;
+  font-family: v.$fuente2;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 10%;
+    margin-left: 45%;
+    font-size: large;
+    font-family: v.$fuente2;
+  }
+}
+
+@include v.mobile {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+
+    .at   { grid-column: 1/2; grid-row: 1/2; }
+    .b    { grid-column: 2/3; grid-row: 1/2; }
+    .c    { grid-column: 1/2; grid-row: 3/4; }
+    .d    { grid-column: 2/3; grid-row: 3/4; }
+    .e    { grid-column: 1/2; grid-row: 5/6; }
+    .f    { grid-column: 2/3; grid-row: 5/6; }
+    .g    { grid-column: 1/2; grid-row: 7/8; }
+    .h    { grid-column: 2/3; grid-row: 7/8; }
+
+    .ppre { grid-column: 1/2; grid-row: 2/3; }
+    .pc   { grid-column: 2/3; grid-row: 2/3; }
+    .pf   { grid-column: 1/2; grid-row: 4/5; }
+    .ptri { grid-column: 2/3; grid-row: 4/5; }
+    .pm   { grid-column: 1/2; grid-row: 6/7; }
+    .ptor { grid-column: 2/3; grid-row: 6/7; }
+    .pt   { grid-column: 1/2; grid-row: 8/9; }
+    .pb   { grid-column: 2/3; grid-row: 8/9; }
+  }
+
+  .boton-tienda {
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 10%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    font-size: large;
+    font-family: v.$fuente2;
+    &:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      border-radius: 10%;
+      margin-left: 25%;
+      margin-bottom: 20%;
+      font-size: large;
+      font-family: v.$fuente2;
+    }
+  }
+}
 
 
 

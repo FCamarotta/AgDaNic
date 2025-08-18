@@ -1,33 +1,35 @@
 @use "variables" as v;
-.main-contactos{
-    .formulario{
-        align-content: start;
-        font-family: v.$fuente3;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        padding: 1%;
-        width: 25vw;
-    }
-        iframe{
-        height: 50vh;
-        width: 50vw;
-        align-content: center;
-}
-@include v.mobile{
-    .main-contactos{
-   align-items: start;
-}
-.formulario{
-    
-    width: 80vw;
-    font-size: small;
-}
-iframe{
-    width: 60vw;
-    height: 35vh;
-    align-content: end;
-}
 
-}
+.main-contactos {
+  .formulario {
+    align-content: start;
+    font-family: v.$fuente3;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 25vw;
+  }
+
+  iframe {
+    height: 50vh;
+    width: 50vw;
+    align-content: center;
+  }
+
+  // 🔹 Responsive (mobile)
+  @include v.mobile {
+    align-items: start;
+
+    .formulario {
+      width: 80vw;
+      font-size: small;
+    }
+
+    iframe {
+      width: 60vw;
+      height: 35vh;
+      align-content: end;
+    }
+  }
 }
